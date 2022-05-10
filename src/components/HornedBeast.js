@@ -21,7 +21,7 @@ class HornedBeast extends React.Component {
     render() {
         return (
             <>
-                <Card style={{ width: '15rem' }}>
+                <Card className="mx-auto" style={{ width: '15rem' }}>
                     <Card.Img onClick={this.addLikeCounter} variant="top" src={this.props.imgUrl} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
