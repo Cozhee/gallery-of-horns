@@ -7,7 +7,7 @@ class HornedBeast extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            votes: 0,
+            votes: Math.floor(Math.random() * 101)
         };
     }
 
