@@ -3,7 +3,13 @@ import React from 'react';
 class Header extends React.Component {
     render() {
         return (
-            <h1>Fearsome Horned Creatures who may not have horns</h1>
+            <>
+                <div style={{ marginBottom: 25, textAlign: 'center' }}>
+                    <h1>Fearsome Horned Creatures who may not have horns</h1>
+                    <p>Click a picture to favorite</p>
+                </div>
+            </>
+
         )
     }
 }
