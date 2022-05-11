@@ -18,8 +18,11 @@ class Selectedbeast extends React.Component {
                     {this.props.description}
                 </Modal.Body>
 
-                <Modal.Footer>
-                    <FontAwesomeIcon style={{ color: 'red' }} icon={faHeart} />{this.props.votes}
+                <Modal.Footer className="justify-content-between">
+                    <div>
+                        <FontAwesomeIcon style={{ color: 'red', marginRight: 4 }} icon={faHeart} />
+                        {this.props.votes}
+                    </div>
                     <Button onClick={this.props.handleClose} variant="secondary">Close</Button>
                 </Modal.Footer>
 
