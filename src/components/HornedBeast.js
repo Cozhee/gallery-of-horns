@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
+import { Card, Col } from 'react-bootstrap'
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -15,23 +15,26 @@ class HornedBeast extends React.Component {
         this.setState({
             votes: this.state.votes + 1
         });
-        console.log(this.state.votes)
+    }
+
+    selectedBeast = () => {
+        this.props.changeModalBehavior(this.props.title, this.props.description, this.props.imgUrl, this.state.votes)
     }
 
     render() {
         return (
-            <>
-                <Card className="mx-auto" style={{ width: '15rem' }}>
-                    <Card.Img onClick={this.addLikeCounter} variant="top" src={this.props.imgUrl} />
+            <Col>
+                <Card className="h-100 mx-auto" style={{ maxWidth: '20rem' }}>
+                    <Card.Img onClick={this.selectedBeast} variant="top" src={this.props.imgUrl} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
                     </Card.Body>
-                    <Card.Footer className="text-muted"><FontAwesomeIcon style={{ color: 'red' }} icon={faHeart} /> {this.state.votes}</Card.Footer>
+                    <Card.Footer><FontAwesomeIcon onClick={this.addLikeCounter} style={{ color: 'red' }} icon={faHeart} /> {this.state.votes}</Card.Footer>
                 </Card>
-            </>
+            </Col>
         )
     }
 }
