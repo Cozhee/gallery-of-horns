@@ -14,8 +14,10 @@ class Selectedbeast extends React.Component {
                 </Modal.Header>
 
                 <Modal.Body style={{ padding: 0 }}>
-                    <img className="img-fluid w-100" alt={this.props.title} src={this.props.imgUrl} />
-                    {this.props.description}
+                    <img className="w-100" alt={this.props.title} src={this.props.imgUrl} />
+                    <div style={{ padding: 35 }}>
+                        {this.props.description}
+                    </div>
                 </Modal.Body>
 
                 <Modal.Footer className="justify-content-between">
