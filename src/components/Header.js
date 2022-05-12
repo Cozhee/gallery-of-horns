@@ -6,7 +6,7 @@ class Header extends React.Component {
             <>
                 <div style={{ marginBottom: 25, textAlign: 'center' }}>
                     <h1>Fearsome Horned Creatures who may not have horns</h1>
-                    <p>Click a picture to favorite</p>
+                    <p>Click a heart to favorite</p>
                 </div>
             </>
 
