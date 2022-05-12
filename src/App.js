@@ -18,7 +18,7 @@ class App extends React.Component {
       img: null,
       title: null,
       desc: null,
-      votes: null
+      votes: null,
     };
   }
 
@@ -39,6 +39,7 @@ class App extends React.Component {
   }
 
   render() {
+
     return (
       <>
         <Topbar />
