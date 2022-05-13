@@ -36,7 +36,7 @@ Actual time needed to complete: 42 minutes
 
 
 
-Number and name of feature: Filting pictures based on horns
+Number and name of feature: Filtering pictures based on horns
 
 Estimate of time needed to complete: 30 minutes
 
