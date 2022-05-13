@@ -33,3 +33,15 @@ Start time: 1:11
 Finish time: 1:53
 
 Actual time needed to complete: 42 minutes
+
+
+
+Number and name of feature: Filting pictures based on horns
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 1:03
+
+Finish time: 2:12
+
+Actual time needed to complete: 1 hour 9 minutes
